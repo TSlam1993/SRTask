@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
-import Menu from './Menu.js'
+import {Menu} from './Menu.js'
 import './App.css'
 
 const App = () => (

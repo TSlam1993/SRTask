@@ -7,10 +7,226 @@ body {
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
     sans-serif;
-  font-size: 1rem;
   line-height: 1.5;
+  font-size: 16px;
 }
 
 button:disabled {
   opacity: 0.5;
+}
+
+.product-wrapper {
+  padding: 10px 20px 50px;
+  border: solid;
+  text-align: center;
+  max-height: 500px;
+  min-height: 400px;
+}
+
+.product {
+  margin-top: 30px;
+  position: relative;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.show-product-title {
+  clear: both;
+  margin-bottom: 30px;
+}
+
+.show-edit-button {
+  text-align: right;
+  position: relative;
+  float: right;
+  font-size: 1.3rem;
+  top: -30px;
+  right: 5px;
+}
+
+.show-delete-button {
+  text-align: right;
+  position: relative;
+  float: right;
+  bottom: -50px;
+  right: 5px;
+  font-size: 1.3rem;
+  z-index: 1;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 2vw;
+  padding: 25px;
+}
+
+.mborder {
+  border: solid 0.5px;
+  border-radius: 5px;
+}
+
+@media (min-width: 1630px) {
+  .product-wrapper {
+    max-width: 900px;
+    margin: auto;
+    min-width: 100%
+  }
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.category {
+  display: inline-block;
+  padding: 10px;
+  font-size: 1.4rem;
+  background: none;
+  border: unset;
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+  line-height: 0;
+}
+
+.category-first-wrapper, .toggle-categories-button, .category-rest-wrapper {
+  display: inline-block;
+  line-height: 0;
+}
+
+.category-rest-wrapper {
+  margin-top: -20px;
+  line-height: 0;
+}
+
+.categories-hide-button {
+  cursor: pointer;
+}
+
+.toggle-categories-button {
+  background: none;
+  border: unset;
+  cursor: pointer;
+  padding: 0;
+  color: blue;
+  font-weight: bold;
+}
+
+.filtered {
+  font-weight: bold;
+  color: green;
+}
+
+.first {
+  display: inline-block;
+}
+
+.rest {
+  display: none;
+}
+
+.title-search-wrapper {
+  padding: 10px;
+}
+
+.title-search {
+  display: inline-block;
+  padding: 10px;
+}
+
+.title-search-input {
+  display: inline-block;
+}
+
+.description-search-wrapper {
+  display: inline-block;
+  padding: 10px
+}
+
+.description-search {
+  display: inline-block;
+  padding: 10px;
+}
+
+.description-search-input {
+  display: inline-block;
+}
+
+.popup-wrapper {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 10%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.popup {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  overflow: hidden;
+}
+
+.popup-button {
+  background: none;
+  border: unset;
+  cursor: pointer;
+  padding: 0;
+  color: green;
+  font-weight: bold;
+}
+
+.popup-button:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.popup-content {
+  padding: 30px;
+}
+
+.close-popup {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-popup:hover,
+.close-popup:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}
+
+.show-categories {
+  display: inline;
+}
+
+.hide {
+  display: none;
 }
